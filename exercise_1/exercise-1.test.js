@@ -1,7 +1,7 @@
 const fs = require('fs');
 const pool = require('../lib/utils/pool');
 
-describe.only('exercise 1', () => {
+describe('exercise 1', () => {
   afterAll(() => pool.end());
 
   it('find all address_id of addresses in the city of Dundee', async () => {
