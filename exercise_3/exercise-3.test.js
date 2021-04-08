@@ -1,10 +1,10 @@
 const fs = require('fs');
 const pool = require('../lib/utils/pool');
 
-describe('exercise 3', () => {
+describe.skip('exercise 3', () => {
   afterAll(() => pool.end());
 
-  it('find all film titles with the category Action', async() => {
+  it('find all film titles with the category Action', async () => {
     const { rows } = await pool.query(fs.readFileSync(`${__dirname}/exercise-3.sql`, 'utf-8'));
     expect(rows).toEqual([
       { title: 'Amadeus Holy' },
