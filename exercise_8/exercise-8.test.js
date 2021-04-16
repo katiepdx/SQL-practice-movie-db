@@ -1,7 +1,7 @@
 const fs = require('fs');
 const pool = require('../lib/utils/pool');
 
-describe.skip('exercise 8', () => {
+describe('exercise 8', () => {
   afterAll(() => pool.end());
 
   it('find all film titles rented out by customers who live in the country of Peru', async () => {
