@@ -1,7 +1,7 @@
 const fs = require('fs');
 const pool = require('../lib/utils/pool');
 
-describe.skip('exercise 5', () => {
+describe('exercise 5', () => {
   afterAll(() => pool.end());
 
   it('find all film titles that an actor with the last_name Davis appears in', async () => {
