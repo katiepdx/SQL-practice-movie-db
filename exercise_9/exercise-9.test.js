@@ -1,7 +1,7 @@
 const fs = require('fs');
 const pool = require('../lib/utils/pool');
 
-describe.skip('exercise 9', () => {
+describe('exercise 9', () => {
   afterAll(() => pool.end());
 
   it('find the film title of all inventory items that have never been rented', async () => {
