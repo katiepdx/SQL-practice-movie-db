@@ -1,7 +1,7 @@
 const fs = require('fs');
 const pool = require('../lib/utils/pool');
 
-describe.skip('exercise 10', () => {
+describe('exercise 10', () => {
   afterAll(() => pool.end());
 
   it('find the category name of all inventory items that have never been rented', async () => {
